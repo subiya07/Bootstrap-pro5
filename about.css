@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 195, 178);
+}
+
+.nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 4px;
+}
+
+.header .navbar .navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(28, 195, 178);
+    transition: width 0.3s;
+}
+
+.header .navbar .navbar-nav .nav-link:hover::after {
+    width: 60%;
+    height: 2px;
+    background-color: rgb(28, 195, 178);
+    transition: width 0.3s;
+    border-bottom: 2px solid rgb(28, 195, 178);
+}
+
+.inner-page-header-3 {
+    background-size: cover;
+    height: 100vh;
+    background-image: url(assets/about1.jpg);
+}
+
+.inner-page-header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.inner-header-shape {
+    background-image: url(assets/contact2.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    z-index: 1;
+}
+
+.inner-page-header .header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    z-index: 1;
+    max-width: 820px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: beige;
+    height: 95vh;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.map-shape {
+    position: absolute;
+    z-index: -1;
+}
+
+.map-shape.map-shape-1 {
+    left: 0;
+}
+
+.map-shape.map-shape-top {
+    top: 0;
+    transform: none;
+}
+
+.about-content-details h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-content-details p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.about-content-details ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 15px;
+}
+
+.about-content-details ul li {
+    font-size: 16px;
+    padding-left: 25px;
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.about-content-details ul li:before {
+    content: "\2192";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-size: 14px;
+}
+
+.about_title {
+    color: rgb(28, 195, 178);
+}
+
+.heading_title {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(28, 195, 178);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.heading_lg_title {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin: 19px 0;
+}
+
+.team_content_container {
+    width: 100%;
+    height: 430px;
+    box-shadow: 2px 2px 21px rgba(128, 128, 128, 0.192);
+    margin: 20px 0;
+    border-radius: 3px !important;
+    position: relative;
+    transition: 0.3s ease-in;
+}
+
+.team_content_container:hover .img_team_member {
+    transform: scale(0.9);
+}
+
+.img_team_member {
+    width: 100%;
+    height: 300px;
+}
+
+.img_member_1 {
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(assets/tea1.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.img_member_2 {
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(assets/tea4.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.img_member_3 {
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(assets/tea2.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.img_member_4 {
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(assets/tea3.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.social_icon_team {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 114px;
+}
+
+.social_icon_team a {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(28, 195, 178);
+    border-radius: 2px;
+    margin: 0px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.icon_account {
+    color: #fff;
+    font-size: 19px;
+}
+
+.team_section_heading {
+    width: 100%;
+    height: 140px;
+}
+
+.heading_name {
+    margin: 10px 0px;
+    color: rgba(2, 10, 38, 0.8);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.heading_sm_name {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.668);
+}
